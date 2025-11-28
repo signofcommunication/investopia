@@ -109,7 +109,7 @@ const CommunityPreview = () => {
               </Typography>
 
               <a
-                href="https://discord.gg/xxxxxxx"
+                href="https://discord.gg/TNEJSthQ"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-indigo-600 font-medium hover:underline"

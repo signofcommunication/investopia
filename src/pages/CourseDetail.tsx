@@ -102,7 +102,7 @@ export default function CourseDetailPage() {
   }
 
   return (
-    <div className="max-w-3xl mx-auto p-6 min-h-screen bg-gray-50">
+    <div className="max-w-full mx-auto p-6 min-h-screen bg-gray-50">
       <button
         className="mb-4 text-blue-600 hover:underline text-sm"
         onClick={() => navigate(-1)}
@@ -122,7 +122,11 @@ export default function CourseDetailPage() {
       </div>
       {/* Video & Detail */}
       {selectedModule && (
-        <ModuleDetail module={selectedModule} level={course.level} />
+        <ModuleDetail
+          module={selectedModule}
+          moduleList={course.modules}
+          activeModuleId={selectedModule.id}
+        />
       )}
       {/* Module List */}
       <div className="mt-6">

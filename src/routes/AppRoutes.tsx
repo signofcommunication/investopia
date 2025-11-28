@@ -7,6 +7,10 @@ import CoursePage from "../pages/Courses";
 import CourseDetailPage from "../pages/CourseDetail";
 import LoginPage from "../pages/LoginPage";
 import PrivateRoute from "../components/PrivateRoute";
+import QuizPage from "../pages/QuizPage";
+import Dashboard from "../pages/Dashboard";
+import PricingPage from "../pages/PricingPage";
+import RegisterPage from "../pages/RegisterPage";
 
 const AppRoutes = () => {
   return (
@@ -16,6 +20,7 @@ const AppRoutes = () => {
         <Route path="/" element={<Home />} />
         <Route path="/glosarium" element={<GlossarySection />} />
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/register" element={<RegisterPage />} />
         {/* Course Beginner bebas akses */}
         <Route path="/courses/beginner" element={<CoursePage />} />
         {/* Proteksi Intermediate & Advanced dengan PrivateRoute (harus login & paid) */}
@@ -26,6 +31,9 @@ const AppRoutes = () => {
         {/* Route lain tetap */}
         <Route path="/courses" element={<CoursePage />} />
         <Route path="/courses/:id" element={<CourseDetailPage />} />
+        <Route path="/quiz" element={<QuizPage />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/pricing" element={<PricingPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>

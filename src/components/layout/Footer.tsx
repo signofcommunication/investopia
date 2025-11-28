@@ -1,4 +1,4 @@
-import logo from "../../assets/react.svg"; // Ganti logo ketika sudah ada
+import logo from "../../assets/logo-1.png"; // Ganti logo ketika sudah ada
 import { FaInstagram, FaDiscord, FaYoutube, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
@@ -11,7 +11,8 @@ const Footer = () => {
             <img
               src={logo}
               alt="Investopia Logo"
-              className="w-12 h-12 mb-4 rounded-lg shadow-md bg-white p-1"
+              className="w-16 h-16 mb-4 p-1 rounded-full bg-white shadow-md object-contain"
+              style={{ boxShadow: "0 2px 12px 0 rgba(0,0,0,0.08)" }}
             />
             <h3 className="font-bold text-xl tracking-wide mb-2">Investopia</h3>
             <p className="text-gray-300 leading-relaxed text-sm">
@@ -65,23 +66,29 @@ const Footer = () => {
                 {
                   icon: <FaInstagram />,
                   color: "hover:text-pink-400 hover:bg-pink-400/10",
+                  link: "https://www.instagram.com/investopia2025/?utm_source=ig_web_button_share_sheet",
                 },
                 {
                   icon: <FaDiscord />,
                   color: "hover:text-indigo-400 hover:bg-indigo-400/10",
+                  link: "https://discord.gg/TNEJSthQ",
                 },
                 {
                   icon: <FaYoutube />,
                   color: "hover:text-red-500 hover:bg-red-500/10",
+                  link: "#",
                 },
                 {
                   icon: <FaLinkedin />,
                   color: "hover:text-blue-400 hover:bg-blue-400/10",
+                  link: "#",
                 },
               ].map((item, i) => (
                 <a
                   key={i}
-                  href="#"
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={`text-2xl p-3 bg-white/10 rounded-full transition-all duration-300 
                   backdrop-blur-sm ${item.color} hover:scale-110 shadow-md`}
                 >

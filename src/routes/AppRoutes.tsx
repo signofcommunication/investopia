@@ -11,6 +11,9 @@ import QuizPage from "../pages/QuizPage";
 import Dashboard from "../pages/Dashboard";
 import PricingPage from "../pages/PricingPage";
 import RegisterPage from "../pages/RegisterPage";
+import BasicVideos from "../pages/BasicVideos";
+import IntermediateVideos from "../pages/IntermediateVideos";
+import AdvancedVideos from "../pages/AdvancedVideos";
 
 const AppRoutes = () => {
   return (
@@ -34,6 +37,9 @@ const AppRoutes = () => {
         <Route path="/quiz" element={<QuizPage />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/pricing" element={<PricingPage />} />
+        <Route path="/basic-videos" element={<BasicVideos />} />
+        <Route path="/intermediate-videos" element={<IntermediateVideos />} />
+        <Route path="/advanced-videos" element={<AdvancedVideos />} />
       </Routes>
       <Footer />
     </BrowserRouter>

@@ -1,3 +1,4 @@
+import logo from "../../assets/logo-2.png";
 import React from "react";
 import { Navbar, Collapse } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
@@ -161,7 +162,7 @@ export default function MainNavbar() {
               className="mr-4 cursor-pointer py-1.5 font-bold text-2xl text-blue-700 tracking-tight flex items-center gap-2"
             >
               <img
-                src="/src/assets/logo-2.png"
+                src={logo}
                 alt="Investopia Logo"
                 className="h-44 w-44 object-contain -my-16"
                 draggable={false}

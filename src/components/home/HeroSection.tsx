@@ -24,6 +24,11 @@ export default function HeroSection() {
             size="lg"
             className="bg-gradient-to-r from-blue-500 to-blue-700 text-white px-8 py-4 rounded-xl shadow-md hover:shadow-lg hover:from-blue-600 hover:to-blue-900 transition-all duration-300 ease-out font-semibold text-lg"
             ripple={true}
+            placeholder=" "
+            onResize={() => {}}
+            onResizeCapture={() => {}}
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
           >
             Mulai Belajar
           </Button>

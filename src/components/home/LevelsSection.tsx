@@ -38,8 +38,20 @@ const LevelsSection = () => {
             <Card
               key={level.title}
               className="shadow-md hover:shadow-xl transition-all duration-300 rounded-xl border border-gray-100 hover:-translate-y-1 bg-white"
+              placeholder=" "
+              onResize={() => {}}
+              onResizeCapture={() => {}}
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
             >
-              <CardBody className="text-center space-y-4">
+              <CardBody
+                className="text-center space-y-4"
+                placeholder=" "
+                onResize={() => {}}
+                onResizeCapture={() => {}}
+                onPointerEnterCapture={() => {}}
+                onPointerLeaveCapture={() => {}}
+              >
                 {/* Icon Wrapper */}
                 <div
                   className={`mx-auto h-14 w-14 flex items-center justify-center rounded-full bg-${level.color}-100`}
@@ -52,11 +64,23 @@ const LevelsSection = () => {
                 <Typography
                   variant="h5"
                   className={`font-bold text-${level.color}-700`}
+                  placeholder=" "
+                  onResize={() => {}}
+                  onResizeCapture={() => {}}
+                  onPointerEnterCapture={() => {}}
+                  onPointerLeaveCapture={() => {}}
                 >
                   {level.title}
                 </Typography>
 
-                <Typography className="text-gray-600 leading-relaxed">
+                <Typography
+                  className="text-gray-600 leading-relaxed"
+                  placeholder=" "
+                  onResize={() => {}}
+                  onResizeCapture={() => {}}
+                  onPointerEnterCapture={() => {}}
+                  onPointerLeaveCapture={() => {}}
+                >
                   {level.desc}
                 </Typography>
               </CardBody>

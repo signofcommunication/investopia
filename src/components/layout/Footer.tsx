@@ -1,4 +1,3 @@
-import React from "react";
 import logo from "../../assets/react.svg"; // Ganti logo ketika sudah ada
 import { FaInstagram, FaDiscord, FaYoutube, FaLinkedin } from "react-icons/fa";
 

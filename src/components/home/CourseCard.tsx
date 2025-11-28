@@ -22,16 +22,46 @@ const CourseCard: React.FC<CourseCardProps> = ({
 }) => {
   return (
     <div onClick={() => onClick(course)}>
-      <Card className="mt-6 w-full cursor-pointer hover:shadow-xl transition">
-        <CardHeader color="blue-gray" className="relative h-40">
+      <Card
+        className="mt-6 w-full cursor-pointer hover:shadow-xl transition"
+        placeholder=" "
+        onResize={() => {}}
+        onResizeCapture={() => {}}
+        onPointerEnterCapture={() => {}}
+        onPointerLeaveCapture={() => {}}
+      >
+        <CardHeader
+          color="blue-gray"
+          className="relative h-40"
+          placeholder=" "
+          onResize={() => {}}
+          onResizeCapture={() => {}}
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
+        >
           <img
             src={course.thumbnail}
             alt={course.title}
             className="object-cover h-full w-full"
           />
         </CardHeader>
-        <CardBody>
-          <Typography variant="h5" color="blue-gray" className="mb-2">
+        <CardBody
+          placeholder=" "
+          onResize={() => {}}
+          onResizeCapture={() => {}}
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
+        >
+          <Typography
+            variant="h5"
+            color="blue-gray"
+            className="mb-2"
+            placeholder=" "
+            onResize={() => {}}
+            onResizeCapture={() => {}}
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
+          >
             {course.title}
           </Typography>
           <span
@@ -42,12 +72,24 @@ const CourseCard: React.FC<CourseCardProps> = ({
             {course.level}
           </span>
         </CardBody>
-        <CardFooter className="pt-0">
+        <CardFooter
+          className="pt-0"
+          placeholder=" "
+          onResize={() => {}}
+          onResizeCapture={() => {}}
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
+        >
           <Button
             size="sm"
             color="blue"
             variant="outlined"
             className="w-full pointer-events-none"
+            placeholder=" "
+            onResize={() => {}}
+            onResizeCapture={() => {}}
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
           >
             Lihat Detail
           </Button>

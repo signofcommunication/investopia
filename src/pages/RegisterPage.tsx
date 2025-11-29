@@ -51,6 +51,7 @@ const RegisterPage: React.FC = () => {
         name: form.name,
         email: form.email,
         createdAt: serverTimestamp(),
+        paid: false,
       });
       navigate("/dashboard");
     } catch (err) {

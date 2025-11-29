@@ -60,6 +60,14 @@ export default function MainNavbar() {
           Pricing
         </a>
       </li>
+      <li>
+        <a
+          href="/learning-materials"
+          className="flex items-center text-blue-700 hover:text-blue-900 font-semibold transition-colors px-2 py-1 rounded hover:bg-blue-100"
+        >
+          Learning Materials
+        </a>
+      </li>
     </ul>
   );
 

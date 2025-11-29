@@ -14,6 +14,7 @@ import RegisterPage from "../pages/RegisterPage";
 import BasicVideos from "../pages/BasicVideos";
 import IntermediateVideos from "../pages/IntermediateVideos";
 import AdvancedVideos from "../pages/AdvancedVideos";
+import LearningMaterials from "../pages/LearningMaterials";
 
 const AppRoutes = () => {
   return (
@@ -40,6 +41,7 @@ const AppRoutes = () => {
         <Route path="/basic-videos" element={<BasicVideos />} />
         <Route path="/intermediate-videos" element={<IntermediateVideos />} />
         <Route path="/advanced-videos" element={<AdvancedVideos />} />
+        <Route path="/learning-materials" element={<LearningMaterials />} />
       </Routes>
       <Footer />
     </BrowserRouter>
